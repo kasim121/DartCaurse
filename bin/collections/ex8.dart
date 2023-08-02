@@ -1,5 +1,6 @@
-import 'package:collection/collection.dart';
-import 'package:collection/collection.dart';
+
+
+import 'dart:collection';
 
 void main(List<String> args) {
   final info = {
