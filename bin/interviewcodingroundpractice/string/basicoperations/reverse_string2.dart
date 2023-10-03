@@ -1,16 +1,14 @@
+//Program to reverse a string (Iterative and Recursive)
 void main() {
   String string = "Kasim";
   print(string[4]);
-  //print("after reverse sring: ${reverseStringMethod(string)}");
+ 
   String afterReverse = reverseStringMethod(string);
   print(afterReverse);
 }
 
 String reverseStringMethod(String inputString) {
- //1. 
-//  return inputString.split('').reversed.join("");
 
-//2.
   String newReverseString = "";
   int length = inputString.length;
     print(inputString);

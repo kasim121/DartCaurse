@@ -1,0 +1,16 @@
+
+//Sort string of characters
+void sortString(String str) {
+   print("before sorting: $str");
+  List<String> arr = str.split('');
+  print("before sorting: $arr");
+  arr.sort();
+  print("after sorting: $arr");
+  print(arr.join(''));
+}
+
+void main() {
+  String s = "kasim";
+
+sortString(s);
+}
