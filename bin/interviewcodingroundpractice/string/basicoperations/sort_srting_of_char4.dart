@@ -1,5 +1,13 @@
 
-//Sort string of characters
+/*
+Sort string of characters
+Input : bbccdefbbaa 
+Output : aabbbbccdef
+
+Input : geeksforgeeks
+Output : eeeefggkkorss
+
+*/
 void sortString(String str) {
    print("before sorting: $str");
   List<String> arr = str.split('');

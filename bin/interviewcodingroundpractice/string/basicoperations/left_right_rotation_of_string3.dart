@@ -1,4 +1,15 @@
-//Left Rotation and Right Rotation of a String
+/*
+Left Rotation and Right Rotation of a String
+
+Input : s = "GeeksforGeeks"
+        d = 2
+Output : Left Rotation  : "eksforGeeksGe" 
+         Right Rotation : "ksGeeksforGee"  
+Input : s = "qwertyu" 
+        d = 2
+Output : Left rotation : "ertyuqw"
+         Right rotation : "yuqwert"
+*/
 void main() {
   String str = "Kasim";
 
