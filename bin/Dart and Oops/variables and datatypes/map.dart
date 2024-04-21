@@ -31,7 +31,7 @@ void main(){
   }
 
   // Using map.entries
-  ages.entries.forEach((entry) {
+  for (var entry in ages.entries) {
     print('${entry.key}: ${entry.value}');
-  });
+  }
 }

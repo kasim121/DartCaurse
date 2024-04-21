@@ -1,4 +1,6 @@
-// ignore: file_names
+
+// ignore_for_file: file_names
+
 void main(){
   List<int> listOfNums = [1,2,3,4,5,6];
   print(listOfNums);

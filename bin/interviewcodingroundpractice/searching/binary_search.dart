@@ -6,8 +6,6 @@ void main(){
 }
 
 bool binarySearch(List numberList, int targetNumber) {
-  int start = 0;
-  int end = numberList.length-1;
   if(numberList.isEmpty){
     return false;
   }
