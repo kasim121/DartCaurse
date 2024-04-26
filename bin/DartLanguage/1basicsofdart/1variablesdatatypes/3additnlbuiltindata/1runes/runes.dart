@@ -1,5 +1,11 @@
 void main() {
-  //6. Runes: Represents a Unicode character.
+  String text = 'Hello \u{1F601}'; // String containing emoji
+  Runes runes = text.runes; // Getting the runes of the string
+  print('Runes: $runes');
+
+
+
+ 
   Runes heartSymbol = Runes('\u2665');
   print(
       "printing Runes value : ${String.fromCharCodes(heartSymbol)}"); // Output: ♥
