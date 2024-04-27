@@ -1,23 +1,17 @@
-import 'dart:io';
-
 void main() {
-  //While Loop Example: User Input Validation
+// While Loop:
+// Suitable for situations where the number of iterations is not known beforehand and depends on a condition.
+// Continues iterating as long as a specified condition is true.
+// Used when the loop condition needs to be checked before each iteration.
+// Often employed for tasks such as input validation, countdowns, or looping until a certain condition is met.
 
-  /*int table = 2;
-  int i = 1;
-  while (i <= 10) {
-    int count = table * i;
-
-    i++;
-    print(count);
-  }*/
-
-  int number;
-  print("Enter a positive number: ");
-  number = int.tryParse(stdin.readLineSync()!) ?? 0;
+  int number = -1; // Predefined positive number for demonstration
+  
+  // Check if the number is positive
   while (number <= 0) {
     print("Invalid input. Please enter a positive number: ");
-    number = int.tryParse(stdin.readLineSync()!) ?? 0;
+    number = 7; // Predefined positive number for demonstration
   }
+  
   print("You entered: $number");
 }
