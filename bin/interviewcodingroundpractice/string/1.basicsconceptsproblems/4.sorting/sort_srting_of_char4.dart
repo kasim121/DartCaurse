@@ -1,4 +1,3 @@
-
 /*
 Sort string of characters
 Input : bbccdefbbaa 
@@ -9,7 +8,7 @@ Output : eeeefggkkorss
 
 */
 void sortString(String str) {
-   print("before sorting: $str");
+  print("before sorting: $str");
   List<String> arr = str.split('');
   print("before sorting: $arr");
   arr.sort();
@@ -20,5 +19,5 @@ void sortString(String str) {
 void main() {
   String s = "kasim";
 
-sortString(s);
+  sortString(s);
 }
