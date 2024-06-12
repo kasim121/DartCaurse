@@ -1,10 +1,4 @@
 // ignore: file_names
-void main(){
-  List<String> listOfNums = ["Kasim","Salmani","Virat"];
-  print(listOfNums);
-  List<String> result = reverseMethod(listOfNums);
-  print(result);
-}
 
 List<String> reverseMethod(List<String> listOfNums) {
   List<String> revList = [];
@@ -13,6 +7,17 @@ List<String> reverseMethod(List<String> listOfNums) {
   }
   return revList;
 }
+void main(){
+  //List<String> listOfNums = ["Kasim","Salmani","Virat"];
+    List<String> listOfNums = ["H","e","l","l","o"];
+  print(listOfNums);
+  List<String> result = reverseMethod(listOfNums);
+  print(result);
+}
+/*
+[Kasim, Salmani, Virat]
+[Virat, Salmani, Kasim]
+*/
 /*void main(){
   List<String> numberList = [99,999,77];
   print(numberList);

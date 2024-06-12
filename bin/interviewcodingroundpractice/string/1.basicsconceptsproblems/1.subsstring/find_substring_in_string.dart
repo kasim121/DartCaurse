@@ -20,3 +20,13 @@ void main() {
   bool isBool3 = test.contains("wr");
   print("Found wr?: $isBool3");
 }
+/*
+sim
+im
+Salmani length: 7
+12
+5
+Found soft?: false
+Found war?: false
+Found wr?: false
+*/
