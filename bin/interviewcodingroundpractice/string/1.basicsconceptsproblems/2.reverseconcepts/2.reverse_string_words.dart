@@ -1,3 +1,27 @@
+String reverseWords(String S) {
+  StringBuffer stringBuffer = StringBuffer();
+
+  int len = S.length;
+  for (int i = len - 1; i >= 0; i--) {
+    if (S[i] == ' ') {
+    
+      stringBuffer.write(S.substring(i -1, len));
+      stringBuffer.write(" ");
+        len = i;
+    }
+  }
+  stringBuffer.write(S.substring(0, len));
+  return stringBuffer.toString();
+}
+
+void main() {
+  String input = "i like this program very much";
+  print(reverseWords(input)); // Output: "much very program this like i"
+}
+
+
+
+/*
 String reverseWords(String input) {
   String word = "";
   String reversedString = "";
@@ -31,6 +55,9 @@ void main() {
   print("before reversing words: $inputString");
   print("after reversing words: $reversedString");
 }
+
+*/
+
 /*
 before reversing words: coding is life
 after reversing words: life is coding

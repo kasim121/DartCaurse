@@ -12,6 +12,17 @@
           print(word);
         }
     }
+
+/*
+This
+is
+a
+sample
+sentence
+for
+demonstration
+*/
+
 // import 'dart:io';
 
 // void main() {

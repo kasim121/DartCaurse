@@ -59,3 +59,39 @@ abcdefg
 after splitting without space [a, b, c, d, e, f, g]
 bacdfeg
 */
+
+//--------------------------------------------------------------------
+/*
+class Solution {
+  void reverse(StringBuffer s, int left, int right) {
+    while (left < right) {
+      String temp = s[left];
+      s[left] = s[right];
+      s[right] = temp;
+      left++;
+      right--;
+    }
+  }
+
+  String reverseStr(String s, int k) {
+    StringBuffer sb = StringBuffer(s);
+    int i = 0;
+    int n = sb.length;
+    while (i < n) {
+      int j = (i + k - 1 < n) ? i + k - 1 : n - 1;
+      reverse(sb, i, j);
+      i = i + 2 * k;
+    }
+    return sb.toString();
+  }
+}
+
+void main() {
+  Solution solution = Solution();
+  String str = "abcdefg";
+  int k = 2;
+  print(str);
+  String res = solution.reverseStr(str, k);
+  print(res); // Output: "bacdfeg"
+}
+*/
