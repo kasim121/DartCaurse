@@ -1,3 +1,4 @@
+
 /*
 Permutation in String
 Medium
@@ -23,11 +24,5 @@ Output: false
 void main(){
   String s1 = "ab";
   String s2 = "fhsjfanjfhb";
-  bool res = checkInclusion(s1,s2);
-  print(res);
    
 }
-bool checkInclusion(String s1, String s2) {
-  
-    return false;
-  }

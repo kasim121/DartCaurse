@@ -40,8 +40,15 @@ class Solution {
 
 void main() {
   Solution obj = Solution();
-  String str = "Let's code leetcode contest";
+  String str = "I am Kasim";
   print("before $str");
   String res = obj.reverseStringIII(str);
   print("after $res");
 }
+/*
+before I am Kasim
+after I ma misaK
+
+before Let's code leetcode contest
+after s'teL edoc edocteel tsetnoc
+*/

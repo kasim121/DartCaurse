@@ -1,4 +1,3 @@
-// ignore: file_names
 
 List<String> reverseMethod(List<String> listOfNums) {
   List<String> revList = [];
