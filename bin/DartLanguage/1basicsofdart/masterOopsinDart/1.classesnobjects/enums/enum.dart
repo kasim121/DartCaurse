@@ -1,4 +1,6 @@
 // Define an enum called Color
+//In Dart, an enum (short for enumeration) is a special data type that allows you to define a collection of constant values,
+// often representing a set of related constants or options.
 enum Color {
   red,
   green,
