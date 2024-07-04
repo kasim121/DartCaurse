@@ -34,7 +34,7 @@ Each isolate has its own memory space, so they can run tasks in parallel without
 They communicate by sending messages asynchronously, 
 which lets Dart apps handle tasks like complex calculations and data fetching efficiently, 
 without slowing down the user interface.
-*/
+
 import 'dart:isolate';
 
 void isolateFunction(SendPort sendPort) {
@@ -51,6 +51,8 @@ void main() async {
     isolate.kill();
   });
 }
+*/
+
 
 /*
 Isolate Function: 
@@ -85,4 +87,34 @@ Use examples like heavy computations or network requests to illustrate why isola
 Benefits: 
 Highlight benefits such as improved performance, responsiveness,
 and scalability in Dart and Flutter applications.
+
+usecase:
+Performing complex computations in the background without blocking the UI.
+Handling network requests and database operations asynchronously.
+Running tasks that require intensive processing, such as image manipulation or data analysis.
 */
+
+
+import 'dart:isolate';
+
+void isolateFunction(SendPort sendPort) {
+  // Perform heavy computation or network operation
+  int result = 0;
+  for (int i = 0; i < 1000000000; i++) {
+    result += i;
+  }
+
+  // Send the result back to the main isolate
+  sendPort.send(result);
+}
+
+void main() async {
+  ReceivePort receivePort = ReceivePort();
+  Isolate isolate = await Isolate.spawn(isolateFunction, receivePort.sendPort);
+
+  receivePort.listen((message) {
+    print('Isolate returned: $message');
+    receivePort.close();
+    isolate.kill();
+  });
+}

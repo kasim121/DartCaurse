@@ -1,5 +1,10 @@
 import 'dart:async';
-
+/*
+"Streams in Dart and Flutter are like continuous flows of data. 
+They let you handle events or data as they happen over time, such as user actions or network responses. 
+By listening to streams, apps can react to these events immediately,
+keeping everything running smoothly and without delays."
+*/
 void main() async {
 //print(await countDown().first);
   // countDown().listen((event) {
