@@ -2,51 +2,38 @@
 Factory Keyword: A factory constructor is defined using the factory keyword.
 Return Existing Instances: Unlike normal constructors, factory constructors can return existing instances of the class.
 Control Over Instance Creation: They provide more control over the instantiation process, allowing you to return different objects based on certain conditions.
+
+
+A factory constructor in Dart is a way to provide an alternative way of creating instances of a class. 
+Unlike a regular constructor, which always returns a new instance of the class, 
+a factory constructor can return an existing instance or a subclass instance. 
+This flexibility makes it useful for cases where you need more control over how instances are created.
+
 */
 // Define a class named `Shape`
-class Shape {
-  final String type;
-  
+class MyLogger {
+  final String name;
+
   // Private constructor
-  Shape._(this.type);
-  
-  // Factory constructor
-  factory Shape(String type) {
-    // Check the type and return different instances based on it
-    if (type == 'circle') {
-      return Circle._(type); // Return a Circle instance
-    } else if (type == 'square') {
-      return Square._(type); // Return a Square instance
-    } else {
-      throw ArgumentError('Unknown shape type: $type');
-    }
+  MyLogger._(this.name);
+
+  // Factory constructor to return cached instances
+  factory MyLogger(String name) {
+    return _loggers.putIfAbsent(name, () => MyLogger._(name));
   }
-}
 
-// Define a Circle class which extends Shape
-class Circle extends Shape {
-  Circle._(String type) : super._(type);
+  // Static map to cache instances
+  static final Map<String, MyLogger> _loggers = {};
 
-  void draw() {
-    print('Drawing a circle');
-  }
-}
-
-// Define a Square class which extends Shape
-class Square extends Shape {
-  Square._(String type) : super._(type);
-
-  void draw() {
-    print('Drawing a square');
+  void log(String message) {
+    print('$name: $message');
   }
 }
 
 void main() {
-  // Create instances of Shape using the factory constructor
-  Shape circle = Shape('circle');
-  Shape square = Shape('square');
+  var logger1 = MyLogger('MainLogger');
+  var logger2 = MyLogger('MainLogger'); // Returns the same instance as logger1
 
-  // Call methods on the instances
-  (circle as Circle).draw(); // Output: Drawing a circle
-  (square as Square).draw(); // Output: Drawing a square
+  logger1.log('Hello, Logger 1!');
+  logger2.log('Hello, Logger 2!'); // Both logs will go to the same logger instance
 }

@@ -4,6 +4,12 @@ import 'dart:async';
 They let you handle events or data as they happen over time, such as user actions or network responses. 
 By listening to streams, apps can react to these events immediately,
 keeping everything running smoothly and without delays."
+
+A stream is a way to handle data that arrives over time. It sends pieces of data one after another.
+
+You can listen to the stream and react to each piece of data as it comes in.
+Streams can also send errors or tell you when they are done.
+
 */
 void main() async {
 //print(await countDown().first);
