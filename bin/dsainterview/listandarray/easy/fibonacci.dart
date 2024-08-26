@@ -29,3 +29,12 @@ void main() {
     print('Fibonacci($i): ${fibonacci(i)}');
   }
 }
+/*
+Fibonacci(3): 2
+Fibonacci(4): 3
+Fibonacci(5): 5
+Fibonacci(6): 8
+Fibonacci(7): 13
+Fibonacci(8): 21
+Fibonacci(9): 34
+*/
