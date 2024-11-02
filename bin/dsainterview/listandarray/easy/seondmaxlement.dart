@@ -21,5 +21,6 @@ int findSecondMax(List<int> nums) {
 void main() {
   List<int> numbers = [3, 7, 1, 9, 5, 2];
   int secondMax = findSecondMax(numbers);
-  print("Second maximum element is: $secondMax"); // Output: Second maximum element is: 7
+  print(
+      "Second maximum element is: $secondMax"); // Output: Second maximum element is: 7
 }

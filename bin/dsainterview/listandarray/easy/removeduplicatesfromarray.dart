@@ -13,3 +13,7 @@ void main() {
   List<int> uniqueNumbers = removeIntDuplicates(numbers);
   print('Unique numbers: $uniqueNumbers'); // Output: Unique numbers: [2,
 }
+/*
+//Output:
+Unique numbers: [2, 7, 1, 5, 3]
+*/

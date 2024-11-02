@@ -30,6 +30,9 @@ void main() {
   }
 }
 /*
+Fibonacci(0): 0
+Fibonacci(1): 1
+Fibonacci(2): 1
 Fibonacci(3): 2
 Fibonacci(4): 3
 Fibonacci(5): 5

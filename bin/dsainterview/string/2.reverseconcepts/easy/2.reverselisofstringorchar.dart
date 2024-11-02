@@ -41,8 +41,6 @@ void main() {
   print("Reversed List: $strList");
 }*/
 
-
-
 /*
 Input: s = ["h","e","l","l","o"]
 Output: ["o","l","l","e","h"]
@@ -67,21 +65,21 @@ void main(){
 }
 */
 
-
 /*
 Input: s = ["Kasim","Salmani","Virat"]
 Output: [[Virat, Salmani, Kasim]]*/
 
-List<String> reverseMethod(List<String> listOfNums) {
+List<String> reverseMethod(List<String> list) {
   List<String> revList = [];
-  for(int i = listOfNums.length-1; i>=0; i--){
-    revList.add(listOfNums[i]);
+  for (int i = list.length - 1; i >= 0; i--) {
+    revList.add(list[i]);
   }
   return revList;
 }
-void main(){
-  List<String> listOfNums = ["Kasim","Salmani","Virat"];
- 
+
+void main() {
+  List<String> listOfNums = ["Kasim", "Salmani", "Virat"];
+
   print(listOfNums);
   List<String> result = reverseMethod(listOfNums);
   print(result);

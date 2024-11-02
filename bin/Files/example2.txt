@@ -1,0 +1,4 @@
+Hello, Dart!
+This is a sample text file.
+It contains some example data.
+You can use it for file operations in Dart.
