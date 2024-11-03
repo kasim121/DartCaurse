@@ -13,6 +13,6 @@ class Immutable {
 
 void main() {
   var obj = Immutable("cookie", 10);
-  print(obj);
+  print(obj.size);
   // obj.cookie = "new cookie";  here you cant change property of the classs from outside
 }
